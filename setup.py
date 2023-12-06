@@ -3,7 +3,6 @@
 
 # Contributer: Lifeng Ding, Vocal Lee
 
-import setuptools
 import os
 import math
 import time
@@ -11,26 +10,6 @@ import random
 import socket
 from urllib import request, error
 from datetime import datetime
-
-with open("README.md", "r") as fh:
-  long_description = fh.read()
-
-setuptools.setup(
-  name="toolbit-pkg-vasebit",
-  version="0.0.1",
-  author="Kai Medina",
-  author_email="info@vasebit.com",
-  description="A small project that allows you to do a lot.",
-  long_description="VaseBit has published ToolBit! Which is a small project that allows you to do a lot. You can check this project out in our page.",
-  long_description_content_type="text/markdown",
-  url="https://vasebit.com",
-  packages=setuptools.find_packages(),
-  classifiers=[
-  "Programming Language :: Python :: 3",
-  "License :: OSI Approved :: MIT License",
-  "Operating System :: OS Independent",
-  ],
-)
 
 def getBiggerNumber(a, b):
     if a > b:
